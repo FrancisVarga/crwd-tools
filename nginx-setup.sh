@@ -8,7 +8,7 @@ echo ''
 
 brew tap josegonzalez/homebrew-php
 brew tap homebrew/dupes
-brew install --without-apache --with-suhosin --with-fpm --with-mysql php53
+brew install --without-apache --with-fpm --with-mysql php53
 
 for pkg in git mcrypt memcached nginx psgrep
 do

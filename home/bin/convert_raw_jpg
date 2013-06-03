@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+mkdir -p $1/convert_jpg/
+echo "convert all files from $1 to $1/convert_jpg/"
+mogrify -verbose -format jpg -path $1/convert_jpg $1/*.NEF

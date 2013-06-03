@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "==========================="
+echo "Restart nagios"
+echo "==========================="
+sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nagios.plist
+sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nagios.plist
