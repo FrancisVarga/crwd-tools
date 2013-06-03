@@ -10,7 +10,7 @@ brew tap josegonzalez/homebrew-php
 brew tap homebrew/dupes
 brew install --without-apache --with-fpm --with-mysql php53
 
-for pkg in git mcrypt memcached nginx psgrep
+for pkg in git mcrypt nginx psgrep
 do
 	message "brew install $pkg ..."
 	brew install $pkg

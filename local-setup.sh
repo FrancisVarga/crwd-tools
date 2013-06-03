@@ -54,6 +54,10 @@ if [ -d $HOME/bin ]
 		mkdir $HOME/bin
 fi
 
+echo 'installing composer'
+curl -sS https://getcomposer.org/installer | php -- --install-dir=bin
+echo 'installing composer done'
+
 message 'symlinks into $HOME/bin will be created now.'
 
 for i in $(ls -1 scripts | grep -i \.sh)
