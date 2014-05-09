@@ -21,7 +21,7 @@ export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
 #---------------------------------------
 # Some Path bullshit
 #---------------------------------------
-PATH=$HOME/bin:/usr/local/bin:$GOPATH/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/opt/php54/bin:$PATH
+PATH=$HOME/bin:/usr/local/bin:/usr/local/Cellar/go/1.2.1/libexec/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/opt/php54/bin:$PATH
 export PATH
 
 #---------------------------------------
@@ -37,7 +37,7 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 #---------------------------------------
 # Vagrant Stuff
 #---------------------------------------
-export VAGRANT_SERVERS=backend,db,mq 
+export VAGRANT_SERVERS=backend,db,mq
 
 #---------------------------------------
 # EC2/AWS Stuff
@@ -56,11 +56,18 @@ export RBENV_ROOT=/usr/local/var/rbenv
 # Android Stuff (homebrew installed)
 #---------------------------------------
 export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
+export ANDROID_HOME=/usr/local/opt/android-sdk
 
 #---------------------------------------
 # I don't know
 #---------------------------------------
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+
+#---------------------------------------
+# some node yo bower configs
+#---------------------------------------
+export CHROME_BIN=/Users/francisvarga/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
+#---------------------------------------
 
 alias ls="ls -la"
 alias ia="open -a 'iA Writer'"
