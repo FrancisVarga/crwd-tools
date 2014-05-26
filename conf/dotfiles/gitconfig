@@ -11,6 +11,7 @@
     symlinks = false
     autocrlf = input
 	excludesfile = /Users/francisvarga/.gitignore_global
+	compression = 0
 
 [color]
     diff = auto
@@ -97,3 +98,5 @@
 	keepBackup = true
 [push]
 	default = matching
+[credential]
+	helper = cache --timeout 3600000

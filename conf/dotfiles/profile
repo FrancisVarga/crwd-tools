@@ -7,6 +7,13 @@ LC_CTYPE="UTF-8"
 export LC_CTYPE
 
 #---------------------------------------
+# JAVA stuff
+#---------------------------------------
+export JAVA_MIN_MEM=2048M
+export JAVA_MAX_MEM=4128M
+export JAVA_PERM_MEM=768M
+
+#---------------------------------------
 # Go Programming Language
 #---------------------------------------
 GOPATH=/$HOME/.go_stuff
