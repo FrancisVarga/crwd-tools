@@ -7,11 +7,12 @@
 # This is my .gitconfig file
 #
 # Did you have question ask me ;)...
-[core]
-    symlinks = false
-    autocrlf = input
-	excludesfile = /Users/francisvarga/.gitignore_global
-	compression = 0
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/1.9.4/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 
 [color]
     diff = auto

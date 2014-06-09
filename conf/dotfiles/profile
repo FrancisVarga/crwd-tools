@@ -23,12 +23,12 @@ export GOPATH
 # Swapping from PHP53 to PHP54
 # export PATH="$(brew --prefix josegonzalez/php/php53)/bin:$PATH"
 #---------------------------------------
-export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
 
 #---------------------------------------
 # Some Path bullshit
 #---------------------------------------
-PATH=$HOME/bin:/usr/local/bin:/usr/local/Cellar/go/1.2.1/libexec/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/opt/php54/bin:$PATH
+PATH=$HOME/bin:/usr/local/bin:/usr/local/Cellar/go/1.2.1/libexec/bin:/usr/local/opt/go/libexec/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/opt/php55/bin:$PATH
 export PATH
 
 #---------------------------------------
@@ -39,7 +39,7 @@ export JIRA_HOME=/Users/francisvarga/.jira
 #---------------------------------------
 # JAVA_HOME for EC2 tools!
 #---------------------------------------
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 #---------------------------------------
 # Vagrant Stuff
@@ -57,7 +57,7 @@ export AWS_CREDENTIAL_FILE="/Users/themachine/.ec2/aws-credentials"
 #---------------------------------------
 # rbenv gewixxe
 #---------------------------------------
-export RBENV_ROOT=/usr/local/var/rbenv
+#export RBENV_ROOT=/usr/local/var/rbenv
 
 #---------------------------------------
 # Android Stuff (homebrew installed)
@@ -124,6 +124,7 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/bin:$PATH"
+#export PATH="/usr/local/heroku/bin:$PATH"
+#eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
