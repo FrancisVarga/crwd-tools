@@ -72,8 +72,8 @@
     format = html
 
 [user]
-	name = FrancisVarga
-	email = github@varga-net.com
+	name = yoclittlebuddha
+	email = francis.varga@yoc.com
 
 [mergetool "opendiff"]
 	cmd = opendiff
